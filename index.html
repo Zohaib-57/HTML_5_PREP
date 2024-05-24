@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link to anchor</title>
+</head>
+<body>
+    <h2 id="topic1">First Topic </h2>
+    <p>Content about first topic</p>
+    <h2 id="topic2">second topic</h2>
+    <p>Content about second topic</p>
+    <h1>Table of content</h1>
+    <a href="#topic1">see first topic</a><hr>
+    <a href="#topic2">see the second topic</a>
+    <hr>
+    <a href="/index2.html" target="_blank" title="hello">see the page</a><hr>
+    <a href="tel:3149392825">phone</a>
+    <hr>
+    <a href="mailto:alikahn@gmail.com">Mail me</a>
+    <h1>LISTS</h1>
+    <ol type="1|a|A|i|I">
+        <h4> ordered List of the students </h4>
+        <!-- this create a numbered list -->
+        <!-- manually change the starting number  of the  list   -->
+        <li>ali </li>
+        <li>khan</li>
+        <li>muhammmad </li>
+        <li>zubair</li>
+        <li>zaeem</li>
+    </ol>
+    <ul>
+        <!-- this create bulleted list  -->
+        <h4>un-ordered list of vegetables</h4>
+        <li>carrot</li>
+        <li>onion</li>
+        <li>tomato</li>
+        <li>cabbage</li>
+        <li>chilli</li>
+    </ul>
+<!-- work on nested list -->
+<ul>
+    <li>item 1</li>
+    <li>item 2
+    <ol>
+    <li>sub-item 2.1</li>
+    <li>sub-item 2.2</li>
+    </ol>
+    </li>
+    <li>item 3</li>
+    <ol>
+        <li>sub item 3.1</li>
+        <li>sub item 3.2</li>
+    </ol>
+   </ul>
+   <!-- description list -->
+   <dl>
+    <dt>name 1</dt>
+    <dd>value for 1</dd>
+    <dt>name 2</dt>
+    <dd>value for 2</dd>
+        <dt>name 1</dt>
+        <dt>name 2</dt>
+        <dd>value for 1 and 2</dd>
+        <dt>name 3</dt>
+        <dd>value for 3</dd>
+        <dd>value for 3</dd>
+    </dl><hr>
+    <h1>Tables</h1>
+    <!-- working on table -->
+    <table>
+        <tr>
+    <th>Roll No</th>
+    <th>Name</th>
+    <th>Department</th>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Ali</td>
+            <!-- <td>BSSE</td> -->
+            <td colspan="2">bachlor of software engineeering</td>
+        </tr>
+        <tr>
+        <td>12</td>
+        <td>Khan</td>
+        <!-- <td>BSSE</td> -->
+        <td colspan="2">bachlor of software engineeering</td>
+        </tr>
+    </table>
+    <!-- More on table -->
+
+    <hr><hr>
+     <table>
+           <caption>Student</caption>
+            <thead>
+            <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            </tr>
+            </thead>
+
+            <tbody> 
+            <tr>
+            <td>32132</td>
+            <td>Muhammad ali</td>
+            </tr>
+            <tr>
+                <td>34242</td>
+                <td>Khan Muhammad</td>
+            </tr>
+            </tbody>
+
+            <tfoot>
+            <tr>
+            <td>footer</td>
+            <td>footer</td>
+            </tr>
+            </tfoot>
+    </table>
+    <hr>
+    <h1>Classes</h1>
+    <!-- Wokring on ID's ans Classes! -->
+    <div class="first-class">Class</div>
+    <!-- to assign multiple classes give the space between the first and second class -->
+    <div class="first second">two classes are assigned to me</div>
+    <h1>ID's</h1>
+    <div id="first id"> first id</div>
+    <!-- id will always be unique -->
+<h1>Images</h1>
+    <!-- use of image -->
+    <!-- simple syntax
+    <img src="" alt="">   -->
+     <!-- responsive image -->
+    <img
+    sizes="(min-width: 1200px) 580px,
+    (min-width: 640px) 48vw,
+    98vw"
+    srcset="hello.png 300w,
+    hello.png 600w,
+    hello.png 900w,
+    hello.png 1200w"
+    src="hello.png" alt="hello">
+    <br>
+    <picture>
+        <source media="(min-width: 200px)" srcset="hello.png">
+        <source media="(min-width: 150px)" srcset="hello.png">
+        <img src="hello.png" style="width:100;">
+       </picture>
+       <!-- responsive image
+       <img src="hello2.png" alt="hello2" sizes="(min-width:1200px) 580px,(min-width:640px) 48vw,98vw"
+       srcset="hello2.png 300w,
+    hello2.png 600w,
+    hello2.png 900w,
+    hello2.png 1200w">
+    <br> -->
+    <!-- Image Map -->
+    <!-- <img src="hello.png" usemap="#shapes">
+<map name="shapes">
+ <area shape="polygon" coords="79,6,5,134,153,134">
+ <area shape="rectangle" coords="177,6,306,134">
+ <area shape="circle" coords="397,71,65">
+</map> -->
+<br>
+<hr>
+<h1>Input Elemnts</h1>
+<!-- type as text for input -->
+ <label for="">Name</label>
+<input  class="name" type="text" size="20" required placeholder="username">
+<label for="password">Password</label>
+<input type="password" class="password" size="20" required placeholder="password">
+<button>submitt</button>
+
+<!-- type as checkbox and Radiobutton for input -->
+<br>
+<input type="checkbox" size="20" class="colors">
+<label for="colors">Color</label>
+<br>
+<input type="radio" name="color" id="red" value="#F00">
+<label for="red">Red</label>
+<br>
+
+<input type="radio" name="color" id="green" value="#0F0">
+<label for="green">Green</label>
+<br>
+<input type="radio" name="color" id="blue" value="#00F">
+<label for="blue">Blue</label>
+<h1>Fieldset</h1>
+<!-- Fieldset Container -->
+<fieldset>
+    <legend>Theme color:</legend>
+    <p>
+    <input type="radio" name="color" id="red" value="#F00">
+    <label for="red">Red</label>
+    </p>
+    <p>
+    <input type="radio" name="color" id="green" value="#0F0">
+    <label for="green">Green</label>
+    </p>
+    <p>
+        <input type="radio" name="color" id="blue" value="#00F">
+        <label for="blue">Blue</label>
+        </p>
+       </fieldset>
+        <h1>FORM</h1>
+       <!-- FORM -->
+       <form>
+ <input type="text" name="name" required placeholder="username">
+ <input type="email" name="email" required placeholder="email">
+ <input pattern="\d*" name="number" required placeholder="contact">
+ <input type="submit" value="Publish"> <!-- form will be validated -->
+ <input type="submit" value="Save" formnovalidate> <!-- form will NOT be validated -->
+ <input type="reset" value="Reset">
+ <!-- taking the color as the input -->
+ <h1>Color</h1>
+ <input type="color" name="color" value="#648633">
+ <input type="color" name="color" value="#642433">
+ <input type="color" name="color" value="#646563">
+ <input type="color" name="color" value="#643223">
+ <input type="color" name="color" value="#647683">
+ <input type="color" name="color" value="#6486f4">
+ <input type="color" name="color" value="#64bb33">
+ <input type="color" name="color" value="#348de3">
+ <input type="color" name="color" value="#6dd633">
+ <input type="color" name="color" value="#60126d">
+ <input type="color" name="color" value="#623243">
+</form>
+<hr><hr>
+
+<!-- input type as file -->
+<!-- <form action="upload_file.php" method="post" enctype="multipart/form-data">
+    Select file to upload:
+    <input type="file" name="fileSubmission" id="fileSubmission">
+    <input type="submit" value="Upload your file" name="submit">
+   </form> -->
+   
+   <form action="index.html" method="post" enctype="multipart/form-data">
+    Select the file for upload
+    <input type="file" name="fileSubmission" id="fileSubmission">
+    <input type="submit" value="upload your file" name="submit">
+   </form>
+   <hr>
+   <!-- input type as reset -->
+   <!-- it will be likned to any form just as above -->
+   <form action="index.html">
+            <p>i am search bar with reset button or input type as reset.</p>
+       <input type="search" name="googlesearch">
+       <!-- linked the search input type to the reset input to make the functionality -->
+       <input type="reset" value="Reset">
+   </form>
+   <br>
+   <hr>
+   <!-- input type as image -->
+   <p>input type as image</p>
+   <input type="image" src="hello.png" alt="image_name" height="100px" width="100px"/>
+   <!-- input as date -->
+
+   <fieldset>
+    <p>input as date or time .can also be day month and year.</p>
+    <p><label>Meeting time: <input type=datetime name="meeting.start"></label>
+   </fieldset>
+   <br><hr>
+
+
+   <!-- here the action attribute means your locking the mention page to unlock user has to enter the password.enter the method as get will give access to your new page. -->
+   <form action="index2.html" method="post" enctype="multipart/form-data">
+    <label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form>
+<hr>
+<!-- some of the extra attributes of the form -->
+<form action="action.php" method="post" target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+<label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form><hr>
+<!-- working on target attribute -->
+<h4>working on target attribute</h4>
+<h1>1</h1>
+<form action="index2.html" target="_blank">
+    <label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form><hr>
+<h1>2</h1>
+<form action="index2.html" target="_parent">
+    <label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form><hr>
+<h1>3</h1>
+<form action="index2.html" target="_self">
+    <label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form><hr>
+<h1>4</h1>
+<form action="index2.html" target="_top">
+    <label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form>
+<hr>
+<!-- default frame will be described -->
+<h1>5</h1>
+<form action="index2.html" target="">
+    <label for="name">Name</label>
+    <input type="text" class="name">
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" class="password">
+    <br><br>
+    <input type="submit">
+</form>
+<p>---------------------------------------------------------------------------</p>
+<!-- combining the two forms together -->
+<h3>group of form</h3>
+<form>
+    <fieldset>
+    <legend>1st Form:</legend>
+    Name:<br>
+    <input type="text"><br>
+
+    Password:<br>
+    <input type="text"><br>
+    </fieldset><br>
+    <fieldset>
+    <legend>2nd Form</legend>
+    Name:<br>
+    <input type="text"><br>
+    Password:<br>
+    <input type="text"><br>
+    </fieldset><br>
+    <input type="submit" value="Submit">
+   </form>
+   <hr>
+   <!-- Next we will do the DIV element -->
+   <!--  a div with some styling -->
+   <div class="Container" id="container" style="border: 1px solid black; background-color: aquamarine;">
+    <h1>I am outer parent div</h1>
+    <!-- nesting the div element -->
+    <div style="border: 1px solid red ;background:black; color: white;"><h3>i am child div</h3></div>
+ <br>
+    <div style="border: 1px solid green; background-color: cadetblue;"><h3>i an child div</h3></div>
+</div>
+<hr>
+<!-- Working on navigation bar -->
+<!-- anchor as navigation -->
+<h4>Anchor Navigation</h4>
+<nav>
+    <a href="https://google.com">Google</a>
+    <a href="https://www.yahoo.com">Yahoo!</a>
+    <a href="https://www.bing.com">Bing</a>
+   </nav>
+   <!-- List Navigation -->
+   <h5>navigation as List</h5>
+   <nav role="navigation">
+    <ul>
+        <li>
+            <a href="https://google.com">Google</a></li>
+        <li> <a href="https://www.yahoo.com">Yahoo!</a></li>
+        <li><a href="https://www.bing.com">Bing</a></li>
+    </ul>
+   </nav>
+   <hr>
+   <!-- Working on article element -->
+   <h1>Article Element</h1>
+   <section>
+    <!-- Each individual blog post is an <article> -->
+    <article>
+    <header>
+    <h1>Blog Post</h1>
+    <time datetime="2016-03-13">13th March 2016</time>
+    </header>
+    <p>The article element represents a self contained article or document.</p>
+    <p>The section element represents a grouping of content.</p>
+    <section>
+    <h2>Comments <small>relating to "Blog Post"</small></h2>
+    <!-- Related comment is also a self-contained article -->
+    <article id="user-comment-1">
+    <p>Excellent!</p>
+    <footer><p>...</p><time>...</time></footer>
+    </article>
+    </section>
+    </article>
+    <!-- ./repeat: <article> -->
+   </section>
+   <hr>
+   <!-- working on main element -->
+   <h1>Main Element</h1>
+ <header>
+     <nav>HEADER</nav>
+ </header>
+ <main>
+    <h1>Individual Blog Post</h1>
+    <p>An introduction for the post.</p>
+    <article>
+        <h2>References</h2>
+        <p>...</p>
+    </article>
+    <article>
+          <h2>Comments</h2>
+    </article>
+ </main>
+    <footer>FOOTER</footer>
+    <hr>
+        <h1>Header Element</h1>
+            <!-- define something -->
+            <!-- article having the header to define what is explanined -->
+            <article>
+                <p>---header---</p>
+                <header>
+                    <h3>Welcome to the Web Era</h3>
+                    <p>The most demanded skill in the 2024 is Web Developmet</p>
+                </header>
+            </article>
+            <!-- we also added the footer as well -->
+            <p>---footer---</p>
+            <footer>No Copyright || All right Reserved</footer>
+            <!-- working on navigationn bar -->
+            <hr>
+            <h5>NAV BAR</h5>
+            <!-- you can also use the list -->
+            <p>list nav bar</p>
+            <ul>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Skills</a></li>
+                <li> <a href="">Work</a></li>
+                <li> <a href="">Contact</a></li>
+            </ul>
+            <p>nav bar tag</p>
+            <nav>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Work</a>
+                <a href="">Contact</a>
+            </nav>
+<hr>
+           <!-- making of form -->
+           <h3>FORM</h3>
+           <form action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="username">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" placeholder="password">
+            
+            <input type="submit">
+<!-- a simple form but it can be modefied with many designs.Form is made through the input element.  -->
+
+           </form>
+
+           <h3>Media Element</h3>
+           <!-- audio -->
+           <p>audio</p>
+           <audio  controls>
+            <!-- can put it on auto play by placing the attribute as autoplay -->
+            <source src="haza.m4a" type="audio/mpeg">
+           </audio>
+           <p>vedio</p>
+           <video  width="400" height="400" controls>
+            <source src="Twinkle.mp4" type="video/mp4">
+           </video>
+           <hr><hr>
+ <!-- porgress element shows the progress of task.  -->
+            <p>progress bar</p>
+           <progress value="22" max="100" style="width: 600px; height: 100px;"></progress><br>
+           <progress value="78" max="100" style="width: 200px; height: 50px;"></progress>
+               
+<!-- working on multiple option attribute  -->
+<p>Multiple option attribute</p>
+          <select name="" multiple>
+           <option value="1">One</option>
+           <option value="2">Two</option>
+           <option value="3">Three</option>
+           <option value="4">Four</option>
+          </select>
+          <br>
+          <!-- option group -->
+<p>Option Group</p>          <select name="">
+            <option value="milk">Milk</option>
+            <optgroup label="Fruits">
+            <option value="banana">Bananas</option>
+            <option value="strawberry">Strawberries</option>
+            </optgroup>
+            <optgroup label="Vegetables" disabled>
+            <option value="carrot">Carrots</option>
+            <option value="zucchini">Zucchini</option>
+            </optgroup>
+           </select>
+<!-- input as list -->
+<p>input as list</p>
+           <input list="Languages">
+<datalist id="Languages">
+ <option value="PHP">
+ <option value="Perl">
+ <option value="Python">
+ <option value="Ruby">
+ <option value="C+">
+</datalist>
+          
+</body>
+</html>
